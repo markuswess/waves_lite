@@ -1,3 +1,3 @@
 [submodule "waves_jupyter_book"]
 	path = waves_jupyter_book
-	url = git@github.com:markuswess/waves.git
+	url = https://github.com/markuswess/waves.git
