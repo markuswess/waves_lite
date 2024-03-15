@@ -23,7 +23,7 @@ jobs:
           python -m pip install -r requirements.txt
           git submodule update --init
           #rm waves_jupyter_book/*.yml waves_jupyter_book/*.save waves_jupyter_book/*.SAVE waves_jupyter_book/*.txt waves_jupyter_book/*.md waves_jupyter_book/postBuild
-          rm waves_jupyter_book/*.md waves_jupyter_book/*.save waves_jupyter_book/*.txt waves_jupyter_book/*.png waves_jupyter_book/Makefile waves_jupyter_book/references.bib
+          rm waves_jupyter_book/*.md waves_jupyter_book/*.txt waves_jupyter_book/*.png waves_jupyter_book/Makefile waves_jupyter_book/references.bib
       - name: Build the JupyterLite site
         run: |
           jupyter lite build --pyodide https://www.asc.tuwien.ac.at/~mhochsteger/ngsolve/pyodide-0.26.0a3/ngsolve_pyodide.tar.bz2 --contents waves_jupyter_book --output-dir dist
